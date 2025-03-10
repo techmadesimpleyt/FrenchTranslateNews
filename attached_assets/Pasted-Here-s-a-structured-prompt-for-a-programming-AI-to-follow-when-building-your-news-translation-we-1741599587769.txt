@@ -1,0 +1,70 @@
+Here’s a structured prompt for a **programming AI** to follow when building your news translation website:  
+
+---
+
+**### Prompt for AI Developer:**  
+
+**Project:** Automated News Translation Website for Secondary School Students  
+
+**Objective:**  
+Develop a **GitHub Pages** website using **Jekyll** that fetches news articles from multiple sources, translates them into French, and categorizes them for KS3 and GCSE students. The site should update automatically using **GitHub Actions**.  
+
+---
+
+### **1. Website Structure (Jekyll)**
+- Use **Jekyll** to generate a static news website.  
+- The site should have:  
+  - A **homepage** displaying the latest articles.  
+  - Two sections: **KS3 (simplified articles)** and **GCSE (complex articles)**.  
+  - Each article should have a **title, translated summary, and a link to the original article**.  
+
+---
+
+### **2. News Fetching & Translation**
+- Fetch articles from **multiple RSS feeds**:  
+  - BBC News, The Guardian, The New York Times, etc.  
+- Use **Google Translate API** to translate **titles and summaries** into French.  
+- **Remove duplicates** by checking article titles across all sources.  
+
+---
+
+### **3. Categorization (KS3 vs GCSE)**
+- KS3 articles should be **shorter & simplified** (e.g., max 100 words).  
+- GCSE articles can be **longer and more complex** (up to 250 words).  
+- Categorization can be based on **word count** or **NLP readability scoring**.  
+
+---
+
+### **4. Automation (GitHub Actions)**
+- Set up a **GitHub Action** to run a Python script daily:  
+  - Fetch latest news.  
+  - Translate it into French.  
+  - Save as **Markdown posts in `_posts/`** for Jekyll.  
+  - Commit & push changes to update the site.  
+
+---
+
+### **5. UI/UX Design**
+- Use a **modern, clean UI** with a blue & white theme.  
+- Navigation bar with **Home, KS3, GCSE** links.  
+- Cards for articles with **titles, summaries, and ‘Read More’ buttons**.  
+
+---
+
+### **6. Tech Stack**
+✅ **GitHub Pages + Jekyll** (Static site)  
+✅ **Python (feedparser, googletrans)** (News fetching & translation)  
+✅ **GitHub Actions** (Automation)  
+✅ **Google Translate API** (Translation)  
+
+---
+
+### **Expected Output**
+- A **fully automated website** that updates daily with translated news.  
+- Clean **Jekyll-generated pages** categorized for KS3 & GCSE.  
+- **No duplicate articles** from multiple news sources.  
+- **Fast performance** with a mobile-friendly layout.  
+
+---
+
+Would you like me to add **specific coding constraints** (e.g., must use YAML config files, Bootstrap for styling, etc.)? 🚀
